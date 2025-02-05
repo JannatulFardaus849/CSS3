@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform CSS</title>
+    <style>
+        body{
+            margin: 50px  50px;
+        }
+        .main-container, .main-container2{
+            display:flex;
+             /* grid-template-rows: repeat(3 1fr);  */
+            gap: 100px; 
+            
+        }
+        .container,.inner1, .inner2, .inner3, .inner4, .inner5, .inner6, .inner7, .inner8{
+            height: 200px;
+            width: 200px;
+            
+        }
+        .container{
+            background-color:blanchedalmond;
+            border: 2px solid blueviolet;
+        }
+        .inner1{
+            border: 2px solid rgb(5, 248, 5);
+            background-color: darkcyan;
+            transform: rotate(45deg); 
+            
+        }
+        .inner2{
+            border: 2px solid rgb(5, 248, 5);
+            background-color: rgb(15, 240, 240);
+             transform: scale(0.5);
+            
+        }
+        .inner3{
+            border: 2px solid rgb(5, 248, 5);
+            background-color: rgb(231, 6, 119);
+             transform: translateX(30px); 
+            
+        }
+        .inner4{
+            border: 2px solid rgb(5, 248, 5);
+            background-color: rgb(145, 7, 158);
+            transform: translateY(40px); 
+            
+        }
+        .inner5{
+            border: 2px solid rgb(5, 248, 5);
+            background-color: rgb(226, 241, 9);
+             transform: scale(0.5) rotate(45deg) translateY(100px); 
+            
+        }
+        .inner6{
+            border: 2px solid rgb(5, 248, 5);
+            background-color: rgb(238, 129, 5);
+             transform: skew(20deg); 
+        }
+        .inner7{
+            border: 2px solid rgb(5, 248, 5);
+            background-color: rgb(5, 124, 192);
+        }
+        .inner8{
+            border: 2px solid rgb(5, 248, 5);
+            background-color: rgb(224, 82, 236);
+        }
+         .inner7:hover{
+            transform: translateY(-150px) scale(0.5) rotate(45deg);
+        }
+        .inner8:hover{
+            transform:  scale(0.5) rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <!-- .container*3{container $}>.inner{inner $} -->
+     <div class=" main-container">
+    <div class="container">
+        <div class="inner1">inner 1</div>
+    </div>
+    <div class="container">container 2
+        <div class="inner2">inner 2</div>
+    </div>
+    <div class="container">container 3
+        <div class="inner3">inner 3</div>
+    </div>
+</div>
+    <div class=" main-container2">
+    <div class="container">
+        <div class="inner4">inner 1</div>
+    </div>
+    <div class="container">container 2
+        <div class="inner5">inner 2</div>
+    </div>
+    <div class="container">container 3
+        <div class="inner6">inner 3</div>
+    </div>
+    <div class="container">
+        <div class="inner7">inner 3</div>
+    </div>
+    <div class="container">
+        <div class="inner8">inner 3</div>
+    </div>
+</div>
+
+</body>
+</html>
